@@ -137,7 +137,7 @@
 查看本地仓库和哪个远程仓库有联系(fetch/push)
 
         git remote -v  
-**用GitHub管理代码库的一般流程**   
+#### 用GitHub管理代码库的一般流程   
 创建之前先把GitHub默认分支由main改成master 
 1. 在GitHub中创建一个仓库，名称就是文件夹的名字
 2. 将远程仓库（空仓库）克隆到本地，将代码放入这个文件夹中  
@@ -150,10 +150,43 @@
 
         git push -u origin master    （master分支）
         git push -u origin test       (test分支)  
-6. 用远程仓库替换本地仓库
+6. 用远程仓库替换本地仓库  
+
+#### 其他  
+1. 更新git本地仓库关联的远程仓库地址  
+
+        git remote set-url origin 新的远程仓库地址
+        例如：
+        git remote set-url origin https://github.com/YuanHao2054/esp32_Network_learn.git 
+
+        再查看本地仓库关联的远程仓库地址
+        git remote -v
+
+
+
   
 ### 6、git技巧  
-1. 使用.gitignore文件配置提交时要忽略的内容  
-忽略仓库根目录中的文件夹：如忽略 privacy文件夹：
+1. **使用.gitignore文件配置提交时要忽略的内容**  
+忽略和删除不一样，如果要忽略的文件已经被跟踪，但它并没有从仓库中消失，需要手动清理  
+如果需要被忽略的内容以及被提交上去，要先删除版本库中的对应内容：
 
-        /privacy/
+        git rm -r --cached 1-1AP/build/  
+
+
+- 忽略仓库根目录中的文件夹：如忽略 privacy文件夹：
+
+        /privacy/  
+- 忽略仓库中二级、三级文件夹：如忽悠工程文件夹1-1AP中的build文件夹：
+
+        1-1AP/build/
+        1-2STA/build/
+        2-1TCPClient/build/
+- 忽略仓库中二级、三级文件夹中的内容，但保留文件夹本体：
+
+        1-1AP/build/*
+        1-2STA/build/*
+        2-1TCPClient/build/*
+        同时加上，在对应目录中放一个.gitkeep文件，就能保留目录本身
+        !1-1AP/build/.gitkeep
+        !1-2STA/build/.gitkeep
+        !2-1TCPClient/build/.gitkeep

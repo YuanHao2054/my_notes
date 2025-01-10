@@ -6,7 +6,7 @@
 选择存放位置 
 
     /home/yuanhao/.ssh/id_rsa  
-设置密钥密码短语  ，**我设置的是2054**
+设置密钥密码短语
 
     yuanhao@PC-YUANHAO11:~/lvgl_workspace/lv_port_pc_vscode$  ssh-keygen -t rsa -b 4096 -C "2054190139@qq.com"
     Generating public/private rsa key pair.
@@ -51,8 +51,6 @@
     cat ~/.ssh/id_rsa.pub  
 
     yuanhao@PC-YUANHAO11:~/lvgl_workspace/lv_port_pc_vscode$ cat ~/.ssh/id_rsa.pub 
-    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDM7da9OQma3jJT9XV8WrbD6mY5H3iLFssCPFOko06oQpQvr+30VdXe+5lvq9H/2H5iAyox83zpsKTlMayI3t00QaEylB8yGVZmiZV8t/LdDZKEF8gf6azmIQLsJ6kfqWQNhGOGCFkwMgPZB/+8Ebt+4Qijt2EoJdSVA9/uWMmQW+vhM+dPR3+FhQf8KH4LLaNfusR9rBVregwoPDhK9JxaZ9EhZP573XfIDIvo9etofsnh0Efu6CeMLbHt4fU/0uS6uGo6aqRSkmUQ+sE+Q8DymmgVD8KQw+ImTsw8Nn/uOPsRNndUUQs5rBWvasBiPg4sxrRImq9CP9zVOT4k937ILfO6erQQfYw5AkeFDDwh37d+2i2mvPaNJvKSRbIHiYp9qGaHEihd+0ESch2PWLj+6i9K4HLm+JGxMK8BG8ipBpTi79gP9c2HaFuU++7k/66/KW7PpEYAcv5yneUgREhuoCGH9G0H2R87xrB/J98Kb6Cn7uTTtxS7qLzPeXG9hCrcsi4BwJWZ3dkVpFPFxzUmMGUNRRdsziRDYg06C+UXoB6TfjZX3SPlD4vAgNVphpd7e2N5o1PlMd9ox2hQQ4cg9Up1vvCJPgJfktFUKF7NKy0meCnjAAY8vXFzVPahgds+O4DC/k/gZvqztS9cHQQJyURZHFR4HQCUZIRuojI9aQ== 2054190139@qq.com
-    yuanhao@PC-YUANHAO11:~/lvgl_workspace/lv_port_pc_vscode$   
 
 **将密钥添加到GitHub账户**
 * 添加公钥到GitHub：

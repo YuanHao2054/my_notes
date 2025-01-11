@@ -1,4 +1,4 @@
-### 1、备份原版镜像源到统一目录  
+### 1、备份原版镜像源到同一目录  
         sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 ### 2、进入apt镜像源列表文件  

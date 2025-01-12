@@ -4,7 +4,7 @@
 
 ### 2、通过ESP-IDF插件将espidf部署到wsl2的Ubuntu中    
 - 安装ESP-IDF插件到工作区
-- 点击左边栏插件，Advancde -> Configure ESP-IDF Extension -> EXPRESS
+- 点击左边栏插件，Advanced -> Configure ESP-IDF Extension -> EXPRESS
 - 按照图片选择部署路径：
 ![图片](../../../markdown图片/espidf_1.png)  
 ### 3、使用USBIPD将USB设备共享给WSL2  

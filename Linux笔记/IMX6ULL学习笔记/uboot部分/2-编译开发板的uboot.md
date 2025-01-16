@@ -6,7 +6,7 @@
 在`/home/$USER/linux/uboot/alientek_uboot`中存放**正点原子提供的 uboot 源码**  
 
         uboot-imx-2016.03-2.1.0-g0ae7e33-v1.7.tar.bz2
-    存放到alientek_uboot文件夹下  
+存放到alientek_uboot文件夹下  
     解压
 
         tar -vxjf uboot-imx-2016.03-2.1.0-g0ae7e33-v1.7.tar.bz2

@@ -166,7 +166,7 @@
 
   
 ### 6、git技巧  
-1. **使用.gitignore文件配置提交时要忽略的内容**  
+#### 1、 **使用.gitignore文件配置提交时要忽略的内容**  
 忽略和删除不一样，如果要忽略的文件已经被跟踪，但它并没有从仓库中消失，需要手动清理  
 如果需要被忽略的内容以及被提交上去，要先删除版本库中的对应内容：
 
@@ -190,3 +190,21 @@
         !1-1AP/build/.gitkeep
         !1-2STA/build/.gitkeep
         !2-1TCPClient/build/.gitkeep
+
+#### 2、重命名本地分支  
+1. **如果还没有推送到远程**，直接使用这个命令来重命名：
+
+        git branch -m oldName newName
+2. **如果已经推送到远程**     
+- 重命名本地分支  
+
+        git branch -m oldName newName
+- 删除远程分支
+
+        git push --delete origin oldName
+- 解除原先远程分支的关联关系
+
+        git branch --unset-upstream 
+- 上传新的本地分支
+
+        git push origin newName

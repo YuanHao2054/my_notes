@@ -37,7 +37,7 @@
         Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
         Bus 001 Device 002: ID 1a86:7522 QinHeng Electronics USB Serial
         Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-7. 在espidf插件中选择串口，选择共享usb设备：
+7. 在espidf插件中选择串口，选择共享usb设备：  
 ![图片](../../../markdown图片/espidf_2.png)
 
 **注意事项**  
